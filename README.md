@@ -5,5 +5,8 @@ Tugas Besar II4037 - Internet of Things
 Website : 
 https://afmsgacor.azurewebsites.net/
 
-## Layer Architecture
+Repo Website :
+https://github.com/hafidzyami/AFMSWebServer
+
+## Architecture Layer
 ![Architecture](images/arsitektur.jpg)
