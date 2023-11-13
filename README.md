@@ -8,5 +8,5 @@ https://afmsgacor.azurewebsites.net/
 Repo Website :
 https://github.com/hafidzyami/AFMSWebServer
 
-## Layer Architecture
+## Architecture Layer
 ![Architecture](images/arsitektur.jpg)
