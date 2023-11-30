@@ -18,6 +18,7 @@ int pos = 0;    // variable to store the servo position
 int durasi;
 int flag;
 
+// Timer
 unsigned long previousMillis = 0;
 unsigned long durasiEndTime = 0;
 unsigned long detectpestEndTime = 0;
@@ -27,6 +28,7 @@ const char* mqtt_server = "broker.mqtt-dashboard.com";
 WiFiClient espClient;
 PubSubClient client(espClient);
 
+// Saat menerima pesan dari MQTT Broker
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived [");
   Serial.print(topic);
@@ -52,6 +54,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   }
 }
 
+// Jika koneksi terputus, maka reconnect ke MQTT Broker
 void reconnect() {
   // Loop until we're reconnected
   while (!client.connected()) {

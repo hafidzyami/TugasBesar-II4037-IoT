@@ -107,4 +107,5 @@ while True:
         blob_client.upload_blob(data)
     print(f"Image {blob_name} uploaded to {container_name} container.")
     
-    sleep(60)
+    # Ulangi kode setiap 6 jam sekali
+    time.sleep(3600 * 6)

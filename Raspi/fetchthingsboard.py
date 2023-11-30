@@ -62,4 +62,6 @@ while True:
     else:
         # Handle any errors or other status codes as needed
         print(f"Request failed with status code: {response.status_code}")
-    time.sleep(3600*60)
+    
+    # Ulangi kode setiap 6 jam sekali
+    time.sleep(3600*6)
